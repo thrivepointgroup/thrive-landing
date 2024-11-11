@@ -41,9 +41,7 @@ export default function About() {
                     help create the best outcomes.
                 </p>
                 <p>
-                    I've been writing code since I was 12, but have been more of a proper engineer for about 10 years.
-                    At this point, in big company terms, I'd level myself as Staff / Senior Staff. I started my
-                    career at Coinbase where I fast-tracked my way to Senior Software Engineer. At Coinbase I wore
+                    I started my career at Coinbase where I fast-tracked my way to Senior Software Engineer. At Coinbase I wore
                     many hats across commerce, decentralized exchange, regular exchange, and core financial
                     infrastructure. I've written code that has moved trillions of dollars (yes, with a T),
                     secured hundreds of billions of dollars, and served hundreds of millions of users. While at
