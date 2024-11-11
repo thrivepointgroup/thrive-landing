@@ -48,10 +48,7 @@ export default function Ventures() {
                         Oftentimes we will act as an advisor to the companies we invest in. Our approach is to
                         provide insight, not prescriptions, to help founders make better decisions. We believe that
                         ultimately the founder has the most data on any given situation, so they need to be the one
-                        making the final call. Most commonly our advice comes in the shape of "here is what we know
-                        from xyz experience, but ultimately it's your call and you should trust your gut on this".
-                        Sometimes we will just say "we don't know, but we can help you find someone who has a better
-                        perspective on this", depending on if we've seen similar situations play out.
+                        making the final call, but we can help give guidance where we have experience.
                     </p>
                 </div>
 
