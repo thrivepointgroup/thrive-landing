@@ -11,7 +11,8 @@ export default function Navbar() {
         { name: 'About', href: '/about' },
         { name: 'Consulting', href: '/consulting' },
         { name: 'Projects', href: '/projects' },
-        { name: 'Ventures', href: '/ventures' },
+        { name: 'Angel Portfolio', href: '/ventures' },
+        { name: 'Blog', href: 'https://blog.thrivepointgroup.com' },
     ];
 
     return (
@@ -32,7 +33,7 @@ export default function Navbar() {
                         </Link>
                     </div>
 
-                    <div className="hidden sm:flex sm:space-x-4 items-center">
+                    <div className="hidden sm:flex sm:space-x-2 items-center">
                         {navigation.map((item) => (
                             <Link
                                 key={item.name}

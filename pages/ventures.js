@@ -8,7 +8,7 @@ export default function Ventures() {
 
     return (
         <div className="max-w-[800px] mx-auto px-4 sm:px-6 lg:px-8 py-12">
-            <h2 className="text-4xl font-bold mb-8">Ventures</h2>
+            <h2 className="text-4xl font-bold mb-8">Angel Portfolio</h2>
 
             <div className="space-y-8 text-lg">
                 <p>
