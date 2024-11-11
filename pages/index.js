@@ -14,7 +14,7 @@ export default function Home() {
                 />
             </div>
             <p className="max-w-[600px] text-lg text-justify font-normal">
-                Thrive is a software engineering consultancy, holding company for high-growth software projects, and angel fund. It's owned and
+                Thrive is a mix of software engineering consultancy, holding company for high-growth software projects, and angel fund. It's owned and
                 operated by Carl Cortright based in San Francisco CA.
             </p>
         </div>
