@@ -38,7 +38,7 @@ export default function About() {
                     I have 10+ years of software engineering and entrepreneurship experience across both venture-backed
                     startups, scale ups and public companies. I started Thrive to work on ideas that I'm personally excited about,
                     while helping companies in my orbit with their tech challenges. We both build and invest to
-                    help create the best outcomes. Thrive is part consultancy, part holding company for my projects, and part angel fund that I invest out of.
+                    help create the best outcomes. Thrive is part consultancy, part holding company for my projects, and part angel fund.
                 </p>
                 <p>
                     I started my career at Coinbase where I fast-tracked my way to Senior Software Engineer. At Coinbase I wore
