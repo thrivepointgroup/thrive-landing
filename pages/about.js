@@ -55,7 +55,7 @@ export default function About() {
                     One. I led of team of 10, owning engineering and go-to-market. I've taken many products,
                     ranging from simple SaaS applications to heavily technical data infrastructure, to market. As a
                     CTO or technical member of the team, I understand both the business and what needs to happen
-                    technically to achieve the companies goals. My latest venture before I started Thrive was a
+                    technically to achieve the company's goals. My latest venture before I started Thrive was a
                     YC-backed AI company where I was CTO. I actively angel invest through the Thrive entity and
                     have ownership in ~30 and counting early stage tech startups.
                 </p>
