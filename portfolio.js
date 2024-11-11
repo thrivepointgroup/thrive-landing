@@ -76,7 +76,7 @@ export const portfolio = [
         image: '/portfolio/moshicam.jpg',
         name: 'Moshi Cam',
         description: 'Your memories, onchain',
-        website: 'https://hamming.ai'
+        website: 'https://moshi.cam/'
     },
     {
         image: '/portfolio/officetogether.jpeg',
