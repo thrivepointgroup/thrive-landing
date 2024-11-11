@@ -35,8 +35,8 @@ export default function About() {
             <div className="space-y-6 text-lg">
                 <p>
                     Hi! My name is Carl and I'm a software engineer and entrepreneur based in San Francisco, CA.
-                    I have 10+ of software engineering and entrepreneurship experience across both venture-backed
-                    startups and scale ups. I started Thrive to work on ideas that I'm personally excited about,
+                    I have 10+ years of software engineering and entrepreneurship experience across both venture-backed
+                    startups, scale ups and public companies. I started Thrive to work on ideas that I'm personally excited about,
                     while helping companies in my orbit with their tech challenges. We both build and invest to
                     help create the best outcomes.
                 </p>
