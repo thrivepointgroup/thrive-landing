@@ -1,15 +1,9 @@
 export const projects = [
     {
-        name: "Unnamed Meme Coin",
-        description: "Exploration that would probably get me in trouble with HR. (Coming Soon)",
+        name: "higherrrrrrr.fun",
+        description: "A new meta for memes",
         website: "",
-        image: "/project/pump.jpg"
+        image: "/project/higherrrrrrr.png"
     },
-    {
-        name: "Jane",
-        description: "Mental health and coaching benefits for high-performing companies. (Coming Soon)",
-        website: "",
-        image: "/project/jane.png"
-    }
     // Add more projects as needed
 ];
