@@ -126,4 +126,16 @@ export const portfolio = [
         description: 'Financing and production platform for artists',
         website: 'https://www.scrn.co/'
     },
+    {
+        image: '/portfolio/bindle.jpeg',
+        name: 'Bindle',
+        description: 'The easiest way to document and organize your work',
+        website: 'https://bindle.work/'
+    },
+    {
+        image: '/portfolio/pear.jpeg',
+        name: 'Pear.ai',
+        description: 'The Open Source AI-Powered Code Editor',
+        website: 'https://trypear.ai/'
+    },
 ];
