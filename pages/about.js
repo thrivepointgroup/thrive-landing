@@ -65,6 +65,14 @@ export default function About() {
             className="text-blue-600 hover:text-blue-800"
           >
             LinkedIn
+          </a> and{' '} 
+          <a
+            href="https://github.com/carlcortright"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 hover:text-blue-800"
+          >
+            Github
           </a>.
         </p>
       </div>
