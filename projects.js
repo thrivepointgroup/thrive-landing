@@ -1,7 +1,7 @@
 export const projects = [
     {
         name: "higherrrrrrr.fun",
-        description: "A new meta for memes",
+        description: "The future of social trading",
         website: "https://higherrrrrrr.fun",
         image: "/project/higherrrrrrr.png"
     },
