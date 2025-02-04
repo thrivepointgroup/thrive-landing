@@ -87,7 +87,7 @@ export const portfolio = [
     {
         image: '/portfolio/syndicate.jpg',
         name: 'Syndicate',
-        description: 'APIs and infrastructure for web3',
+        description: 'Community rollups',
         website: 'https://syndicate.io/'
     },
     {
