@@ -11,7 +11,7 @@ export default function Fund() {
 
       <div className="space-y-8 text-lg">
         <p>
-          Thrive operates a hybrid liquid and venture fund. We invest in early stage startup companies, providing typical angel check sizes through to Series A, both directly and via syndicates. We also have various proprietary liquid strategies to manage risk and optimize returns.
+          Thrive operates a hybrid liquid and venture fund. We invest in early stage startup companies, providing typical paticipatory check sizes through to Series A, both directly and via syndicates. We also have various proprietary liquid strategies to manage risk and optimize returns.
         </p>
 
         <div>
@@ -38,7 +38,7 @@ export default function Fund() {
           </p>
         </div>
 
-        <h2 className="text-3xl font-bold mb-2">Angel Portfolio</h2>
+        <h2 className="text-3xl font-bold mb-2">Portfolio</h2>
 
         <p className="mt-2">
           All investments listed here are either direct or through syndicates. There may be investments omitted from this page.
