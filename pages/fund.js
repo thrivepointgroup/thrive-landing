@@ -62,7 +62,7 @@ export default function Fund() {
                       src={company.image}
                       alt={company.name}
                       fill
-                      className="object-contain"
+                      className="object-contain p-2"
                     />
                   </div>
                 </div>
