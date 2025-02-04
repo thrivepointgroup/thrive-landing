@@ -27,7 +27,7 @@ export const portfolio = [
     {
         image: '/portfolio/moonglow.png',
         name: 'Moonglow',
-        description: 'Connect jupyter notebooks to remote cloud compute',
+        description: 'Automate any web task with AI',
         website: 'https://moonglow.ai/'
     },
     {
