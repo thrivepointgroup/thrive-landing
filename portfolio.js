@@ -138,4 +138,10 @@ export const portfolio = [
         description: 'The Open Source AI-Powered Code Editor',
         website: 'https://trypear.ai/'
     },
+    {
+        image: '/portfolio/almanax.jpeg',
+        name: 'Almanax',
+        description: 'AI security engineer',
+        website: 'https://www.almanax.ai/'
+    },
 ];
