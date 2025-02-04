@@ -9,7 +9,7 @@ export const portfolio = [
     {
         image: '/portfolio/ledgerup.png',
         name: 'Ledger Up',
-        description: 'Your first and only finance hire',
+        description: 'AI revenue lifecycle manager',
         website: 'https://ledgerup.ai'
     },
     {
@@ -81,7 +81,7 @@ export const portfolio = [
     {
         image: '/portfolio/officetogether.jpeg',
         name: 'Office Together',
-        description: 'Acquired by Envoy, desk and team scheduling',
+        description: 'ACQUIRED',
         website: ''
     },
     {

@@ -49,32 +49,58 @@ export default function Fund() {
         {sortedPortfolio.length > 0 ? (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {sortedPortfolio.map((company) => (
-              <a
-                key={company.name}
-                href={company.website}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block aspect-square relative cursor-pointer transition-shadow hover:shadow-lg"
-              >
-                <div className="absolute inset-0 bg-white">
-                  <div className="relative w-full h-full">
-                    <Image
-                      src={company.image}
-                      alt={company.name}
-                      fill
-                      className="object-contain p-2"
-                    />
+              company.website ? (
+                <a
+                  key={company.name}
+                  href={company.website}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block aspect-square relative cursor-pointer transition-shadow hover:shadow-lg"
+                >
+                  <div className="absolute inset-0 bg-white">
+                    <div className="relative w-full h-full">
+                      <Image
+                        src={company.image}
+                        alt={company.name}
+                        fill
+                        className="object-contain p-2"
+                      />
+                    </div>
+                  </div>
+                  <div className="absolute inset-0 bg-black bg-opacity-50 p-4 flex flex-col justify-end">
+                    <h3 className="font-bold text-lg mb-1 text-white">
+                      {company.name}
+                    </h3>
+                    <p className="text-sm text-gray-200">
+                      {company.description}
+                    </p>
+                  </div>
+                </a>
+              ) : (
+                <div
+                  key={company.name}
+                  className="block aspect-square relative"
+                >
+                  <div className="absolute inset-0 bg-white">
+                    <div className="relative w-full h-full">
+                      <Image
+                        src={company.image}
+                        alt={company.name}
+                        fill
+                        className="object-contain p-2"
+                      />
+                    </div>
+                  </div>
+                  <div className="absolute inset-0 bg-black bg-opacity-50 p-4 flex flex-col justify-end">
+                    <h3 className="font-bold text-lg mb-1 text-white">
+                      {company.name}
+                    </h3>
+                    <p className="text-sm text-gray-200">
+                      {company.description}
+                    </p>
                   </div>
                 </div>
-                <div className="absolute inset-0 bg-black bg-opacity-50 p-4 flex flex-col justify-end">
-                  <h3 className="font-bold text-lg mb-1 text-white">
-                    {company.name}
-                  </h3>
-                  <p className="text-sm text-gray-200">
-                    {company.description}
-                  </p>
-                </div>
-              </a>
+              )
             ))}
           </div>
         ) : (
