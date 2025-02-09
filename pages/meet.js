@@ -300,6 +300,12 @@ export default function Meet() {
               Next
             </button>
             <WhyPay />
+            <button 
+              onClick={() => setStep('who')} 
+              className={backButton}
+            >
+              back
+            </button>
           </div>
         </div>
       )}
@@ -323,6 +329,12 @@ export default function Meet() {
               Next
             </button>
             <WhyPay />
+            <button 
+              onClick={() => setStep('who')} 
+              className={backButton}
+            >
+              back
+            </button>
           </div>
         </div>
       )}
@@ -335,6 +347,12 @@ export default function Meet() {
           </button>
           <button onClick={() => setStep('vc-captable')} className={selectionButton}>
             You've been on my cap table before
+          </button>
+          <button 
+            onClick={() => setStep('who')} 
+            className={backButton}
+          >
+            back
           </button>
         </div>
       )}
@@ -358,6 +376,12 @@ export default function Meet() {
               Next
             </button>
             <WhyPay />
+            <button 
+              onClick={() => setStep('vc')} 
+              className={backButton}
+            >
+              back
+            </button>
           </div>
         </div>
       )}
