@@ -291,7 +291,7 @@ export default function Meet() {
           <About />
           <div className="flex flex-col items-center space-y-4">
             <p className="text-base max-w-md text-center">
-              I charge a <strong>$1,000</strong> deposit for a 30‑minute meeting. You'll be able to submit this on the next screen.
+              If you think this is a good fit, I'd love to meet. I charge a <strong>$1,000</strong> deposit for a 30‑minute meeting.
             </p>
             <button
               onClick={handleNext}
@@ -315,10 +315,7 @@ export default function Meet() {
         <div className="space-y-8 w-full max-w-2xl mx-auto">
           <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-200">
             <p className="text-gray-800 leading-relaxed">
-              I receive many inbound inquiries trying to sell me software. I charge a <strong>$1,000</strong> deposit for a 30‑minute meeting during which I will review your documentation in depth. You'll be able to submit this on the next screen.
-            </p>
-            <p className="mt-4 text-gray-800 leading-relaxed">
-              This deposit helps ensure that only inquiries with a strong potential fit reach my calendar.
+              If you think this is a good fit, I'd love to meet. I charge a <strong>$1,000</strong> deposit for a 30‑minute meeting during which I will review your documentation in depth.
             </p>
           </div>
           <div className="flex flex-col items-center space-y-4">
@@ -362,10 +359,7 @@ export default function Meet() {
         <div className="space-y-8 w-full max-w-2xl mx-auto">
           <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-200">
             <p className="text-gray-800 leading-relaxed">
-              I have extensive experience with venture capital and fundraising.
-            </p>
-            <p className="mt-4 text-gray-800 leading-relaxed">
-              I charge a <strong>$10,000</strong> deposit for a one‑hour meeting. You'll be able to submit this on the next screen. I will prepare thoroughly for our meeting, and I expect you to come prepared as well.
+              If you think this is a good fit, I'd love to meet. I charge a <strong>$10,000</strong> deposit for a one‑hour meeting. I will prepare thoroughly for our meeting, and I expect you to come prepared as well.
             </p>
           </div>
           <div className="flex flex-col items-center space-y-4">
