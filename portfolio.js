@@ -117,7 +117,7 @@ export const portfolio = [
     {
         image: '/portfolio/b3.jpg',
         name: 'B3',
-        description: 'Onchain gaming ecosystem on Base',
+        description: '(ONCHAIN: $B3) Onchain gaming ecosystem on Base',
         website: 'https://www.b3.fun/'
     },
     {
