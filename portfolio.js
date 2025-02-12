@@ -134,7 +134,7 @@ export const portfolio = [
     },
     {
         image: '/portfolio/pear.jpeg',
-        name: 'Pear.ai',
+        name: 'Pear',
         description: 'The Open Source AI-Powered Code Editor',
         website: 'https://trypear.ai/'
     },

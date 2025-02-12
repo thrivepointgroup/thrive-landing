@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export default function Home() {
     return (
-        <div className="min-h-[calc(100vh-8rem)] flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8">
+        <div className="min-h-[calc(100vh-10rem)] flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8">
             <div className="mb-12 animate-slowspin">
                 <Image
                     src="/plain.svg"
