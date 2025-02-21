@@ -7,11 +7,10 @@ export default function SingularityPage() {
   const [dimensions, setDimensions] = useState({ width: 800, height: 800 });
 
   useEffect(() => {
-    // Update dimensions on mount and window resize
     function updateDimensions() {
       const width = window.innerWidth;
       const height = window.innerHeight;
-      const size = Math.max(width, height); // Make it square and cover the viewport
+      const size = Math.min(width, height) * 0.7;
       setDimensions({ width: size, height: size });
     }
 
@@ -21,12 +20,20 @@ export default function SingularityPage() {
   }, []);
 
   return (
-    <div className="fixed inset-0 bg-black overflow-hidden">
+    <div className="fixed inset-0 overflow-hidden bg-white">
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-        <Singularity 
-          width={dimensions.width} 
-          height={dimensions.height}
-        />
+        <div className="relative">
+          {/* Frame */}
+          <div className="absolute -inset-8 border border-[#3E4784] opacity-20" />
+          <div className="absolute -inset-16 border border-[#3E4784] rotate-45 opacity-10" />
+          <div className="absolute -inset-24 border border-[#3E4784] opacity-5" />
+          
+          {/* Fractal */}
+          <Singularity 
+            width={dimensions.width} 
+            height={dimensions.height}
+          />
+        </div>
       </div>
     </div>
   );

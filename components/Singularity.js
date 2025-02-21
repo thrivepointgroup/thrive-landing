@@ -70,19 +70,31 @@ export default function Singularity({
 
             // Black and white coloring
             const brightness = iteration < params.maxIterations 
-              ? 1 - (iteration / params.maxIterations)
+              ? 1 - (iteration / params.maxIterations)  // Invert back
               : 0;
             
-            const value = Math.floor(brightness * 255);
+            const r = 62;   // #3E
+            const g = 71;   // #47
+            const b = 132;  // #84
+            
+            // Calculate colors starting from purple to white
+            const red = Math.floor(255 - (255 - r) * brightness);
+            const green = Math.floor(255 - (255 - g) * brightness);
+            const blue = Math.floor(255 - (255 - b) * brightness);
             
             const rgba = (255 << 24) |
-                        (value << 16) |
-                        (value << 8) |
-                        value;
+                        (blue << 16) |
+                        (green << 8) |
+                        red;
             
             pixels[y * width + x] = rgba;
           } else {
-            pixels[y * width + x] = 0;
+            // Make background dark purple
+            const rgba = (255 << 24) |
+                        (132 << 16) |  // b
+                        (71 << 8) |    // g
+                        62;            // r
+            pixels[y * width + x] = rgba;
           }
         }
       }

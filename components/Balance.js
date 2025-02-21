@@ -81,17 +81,19 @@ export default function Balance({
               iteration++;
             }
 
+            // Black and white coloring
             const brightness = iteration < params.maxIterations 
-              ? 1 - (iteration / params.maxIterations)
-              : 0;
+              ? iteration / params.maxIterations
+              : 1;
             
-            const r = 62;
-            const g = 71;
-            const b = 132;
+            const r = 62;  // #3E
+            const g = 71;  // #47
+            const b = 132; // #84
             
-            const red = Math.floor(255 - (255 - r) * (1 - brightness));
-            const green = Math.floor(255 - (255 - g) * (1 - brightness));
-            const blue = Math.floor(255 - (255 - b) * (1 - brightness));
+            // Invert the color calculation to start from white
+            const red = Math.floor(255 - (255 - r) * brightness);
+            const green = Math.floor(255 - (255 - g) * brightness);
+            const blue = Math.floor(255 - (255 - b) * brightness);
             
             const rgba = (255 << 24) |
                         (blue << 16) |
