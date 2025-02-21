@@ -63,8 +63,9 @@ export default function Balance({
           const distanceSquared = dx * dx + dy * dy;
           
           if (distanceSquared <= radiusSquared) {
-            const x0 = (x - width/2) / (width * currentZoom) + centerX;
-            const y0 = (y - height/2) / (height * currentZoom) + centerY;
+            // Rotate coordinates 90 degrees by swapping x and y and negating one
+            const x0 = ((y - height/2) / (height * currentZoom)) + centerX;
+            const y0 = (-(x - width/2) / (width * currentZoom)) + centerY;
 
             let xi = 0;
             let yi = 0;
