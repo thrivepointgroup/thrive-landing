@@ -8,14 +8,10 @@ export default function BalancePage() {
   return (
     <div className="min-h-screen bg-white text-black flex items-center justify-center">
       <Head>
-        <title>Duality | Thrive</title>
+        <title>Duality</title>
       </Head>
 
       <div className="max-w-4xl">
-        <h1 className="text-4xl font-bold mb-8 text-center">
-          Duality
-        </h1>
-        
         <Balance width={600} height={600} fadeToLogo={false} />
       </div>
     </div>
