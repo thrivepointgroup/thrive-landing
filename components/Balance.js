@@ -4,7 +4,8 @@ import Image from 'next/image';
 export default function Balance({ 
   phi = (1 + Math.sqrt(5)) / 2,
   width = 300,  // default smaller size
-  height = 300
+  height = 300,
+  fadeToLogo = false  // New prop to control logo fade
 }) {
   const canvasRef = useRef(null);
   const [zoom, setZoom] = useState(1);
@@ -113,21 +114,23 @@ export default function Balance({
       if (!lastFrameTime.current) {
         lastFrameTime.current = currentTime;
         
-        // Delay the start of fade animation by 13 seconds
-        setTimeout(() => {
-          setShowLogo(true);
-          const startTime = Date.now();
-          const fadeInterval = setInterval(() => {
-            const elapsed = Date.now() - startTime;
-            const progress = Math.min(elapsed / FADE_DURATION, 1);
-            setFadeProgress(progress);
-            
-            if (progress >= 1) {
-              clearInterval(fadeInterval);
-              setIsAnimating(false);
-            }
-          }, 16); // ~60fps
-        }, FADE_DELAY);
+        // Only setup fade if fadeToLogo is true
+        if (fadeToLogo) {
+          setTimeout(() => {
+            setShowLogo(true);
+            const startTime = Date.now();
+            const fadeInterval = setInterval(() => {
+              const elapsed = Date.now() - startTime;
+              const progress = Math.min(elapsed / FADE_DURATION, 1);
+              setFadeProgress(progress);
+              
+              if (progress >= 1) {
+                clearInterval(fadeInterval);
+                setIsAnimating(false);
+              }
+            }, 16);
+          }, FADE_DELAY);
+        }
       }
       
       const deltaTime = currentTime - lastFrameTime.current;
@@ -161,7 +164,7 @@ export default function Balance({
         cancelAnimationFrame(animationRef.current);
       }
     };
-  }, [zoom, centerX, centerY, isAnimating, params, targetZoom, width, height]);
+  }, [zoom, centerX, centerY, isAnimating, params, targetZoom, width, height, fadeToLogo]);
 
   const handleCanvasClick = (e) => {
     const rect = e.target.getBoundingClientRect();
@@ -187,25 +190,27 @@ export default function Balance({
           margin: '0 auto',
           borderRadius: '50%',
           boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)',
-          opacity: 1 - fadeProgress,
+          opacity: fadeToLogo ? 1 - fadeProgress : 1,
           transition: 'opacity 100ms linear'
         }}
       />
-      <div 
-        className="absolute top-0 left-0 right-0 bottom-0 flex items-center justify-center"
-        style={{
-          opacity: fadeProgress,
-          transition: 'opacity 100ms linear'
-        }}
-      >
-        <Image
-          src="/plain.svg"
-          alt="Thrive"
-          width={Math.floor(width * 0.8)}
-          height={Math.floor(height * 0.8)}
-          priority
-        />
-      </div>
+      {fadeToLogo && (
+        <div 
+          className="absolute top-0 left-0 right-0 bottom-0 flex items-center justify-center"
+          style={{
+            opacity: fadeProgress,
+            transition: 'opacity 100ms linear'
+          }}
+        >
+          <Image
+            src="/plain.svg"
+            alt="Thrive"
+            width={Math.floor(width * 0.8)}
+            height={Math.floor(height * 0.8)}
+            priority
+          />
+        </div>
+      )}
     </div>
   );
 } 

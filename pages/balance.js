@@ -16,7 +16,7 @@ export default function BalancePage() {
           Duality
         </h1>
         
-        <Balance width={600} height={600} />
+        <Balance width={600} height={600} fadeToLogo={false} />
       </div>
     </div>
   );
